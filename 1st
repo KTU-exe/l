@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+void skait(int a, int b, int c);
+int main(){
+    int a,b,c;
+    cout << "kokie skait: ";
+    cin >> a >> b >> c;
+    
+    skait(a,b,c);
+    
+}
+
+void skait(int a, int b, int c){
+    int n= a + b + c;
+    int v= n / 3;
+    cout << v;
+    
+    
+}
