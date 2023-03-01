@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+double Ptrik(double a);
+
+int main(){
+    double a;
+    
+    cout << "kokie skait: ";
+    cin >> a;
+    
+    Ptrik(a);
+   cout << setprecision(6) << "pradiniai duomenis: " << a << endl;
+    
+}
+
+double Ptrik(double a){
+    a = a + a + a;
+    cout << setprecision(6) << "rezultatas: " << a << endl;
+}
