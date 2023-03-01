@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+double strik(double a);
+
+int main(){
+    double a;
+    
+    cout << "kokie skait: ";
+    cin >> a;
+    
+    strik(a);
+   cout << setprecision(6) << "pradiniai duomenis: " << a << endl;
+    
+}
+
+double strik(double a){
+   double n = a / 2;
+   double h = (a*a) + (n*n);
+   double s = (a * sqrt(h)) / 2;
+    cout << setprecision(6) << "rezultatas: " << s << endl;
+}
